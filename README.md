@@ -1,50 +1,122 @@
-# 📱 OCR Assist – Smart Text Recognition App
+# 📷 OCR Assist – Smart Multi-Feature OCR Android App
 
-OCR Assist is an Android-based application that enables users to extract text from images in real-time and convert it into readable, editable, and audible formats. The app is designed to support multiple languages and provide seamless text recognition with additional accessibility features.
+## 🚀 Overview
 
-## 🚀 Features
+**OCR Assist** is a powerful Android application that uses Optical Character Recognition (OCR) to extract text from images in real time and batch mode. It integrates advanced features like multi-language detection, translation, and text-to-speech, making it a complete productivity tool.
 
-* 📷 **Image to Text (OCR):** Extract text from images instantly
-* 🌐 **Multilingual Support:** Recognizes and processes text in multiple languages
-* 🔊 **Text-to-Speech:** Converts extracted text into speech for accessibility
-* ⚡ **Real-Time OCR:** Capture and process text using the device camera
-* 📂 **Batch OCR Processing:** Extract text from multiple images efficiently
+---
 
-## 🛠️ Tech Stack
+## ✨ Features
+
+### 🔍 OCR Capabilities
+
+* 📷 **Real-Time OCR** – Extract text instantly using camera
+* 🖼 **Batch OCR** – Process multiple images at once
+* ✍️ **Handwriting Recognition** – Detect handwritten text
+* 🌍 **Multi-Language OCR** – Supports multiple languages in a single image
+
+---
+
+### 🌐 Language & Accessibility
+
+* 🌎 **Auto Language Detection**
+* 🔄 **Text Translation** – Translate extracted text into selected language
+* 🔊 **Text-to-Speech (TTS)** – Listen to extracted text with multi-language support
+
+---
+
+### 🎯 Smart Processing
+
+* 📐 **Row-wise Text Alignment** – Maintains original structure of text
+* 🧠 **Structured Output** – Preserves formatting (lines, spacing)
+* ⚡ **Optimized OCR Engine** – Fast and efficient processing
+
+---
+
+### 🎨 UI/UX
+
+* 🌈 **Colorful & Modern UI**
+* 🌙 **Dark Mode Support**
+* 🎛 **Clean Action Bar Controls**
+* 📱 **Responsive Design**
+
+---
+
+## 🛠 Tech Stack
 
 * **Language:** Java
-* **Platform:** Android (Android Studio)
-* **Libraries/Tools:** ML Kit / Tesseract OCR (or specify what you used)
-* **Other Features:** Speech APIs for text-to-speech functionality
+* **IDE:** Android Studio
+* **OCR:** ML Kit Text Recognition
+* **Translation:** ML Kit / API-based
+* **TTS:** Android TextToSpeech API
+* **Architecture:** Modular (Clean Structure)
 
-## 📌 Use Cases
+---
 
-* Digitizing printed documents
-* Assisting visually impaired users with text-to-speech
-* Translating and understanding multilingual content
-* Extracting notes from books, signs, and documents
+## 📂 Project Structure
 
-# Clone the repository
-git clone https://github.com/yourusername/ocr-assist.git
+```
+com.example.ocrassist
+│
+├── ui/              # Activities & UI components
+├── ocr/             # OCR processing logic
+├── tts/             # Text-to-Speech module
+├── translation/     # Translation module
+├── utils/           # Helper classes
+├── adapter/         # RecyclerView adapters
+└── model/           # Data models
+```
 
-* Open the project in **Android Studio**
-* Sync Gradle and install dependencies
-* Run the app on an emulator or physical device
+---
 
-## 📷 Output
+## ⚙️ Installation
 
-* Extracted text displayed on screen
-* Option to listen to the text using text-to-speech
-* Supports both live camera capture and image upload
+1. Clone the repository:
 
-## 📈 Future Improvements
+```bash
+git clone https://github.com/your-username/ocr-assist.git
+```
 
-* Integration with translation APIs
-* Cloud-based OCR for higher accuracy
-* Export text as PDF or DOC files
-* UI/UX enhancements
+2. Open in Android Studio
 
-## 🤝 Contributing
+3. Sync Gradle & Run the project
 
-Contributions are welcome! Feel free to fork this repository and submit pull requests.
+---
 
+## 📸 Screenshots
+
+*(Add your app screenshots here)*
+
+---
+
+## 🎯 Future Enhancements
+
+* ☁️ Cloud sync & backup
+* 📄 Export as PDF / DOC
+* 🧠 AI-based text summarization
+* 🎙 Voice command support
+
+---
+
+## 🤝 Contribution
+
+Contributions are welcome! Feel free to fork the repo and submit a pull request.
+
+---
+
+## 📜 License
+
+This project is for educational purposes.
+
+---
+
+## 👨‍💻 Author
+
+**Rahil**
+B.Tech CSE Student
+
+---
+
+## ⭐ Support
+
+If you like this project, please ⭐ the repository!
