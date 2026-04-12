@@ -7,6 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:background="@drawable/bg_gradient_main"
     tools:context=".ui.MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -17,9 +18,11 @@
             android:id="@+id/topAppBar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/bg_gradient_toolbar"
+            android:elevation="4dp"
             app:title="OCR Assist"
             app:titleCentered="true"
-            app:titleTextColor="?attr/colorOnSurface" />
+            app:titleTextColor="@color/white" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -33,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="@dimen/margin_standard">
 
             <!-- Card 1 & 2 Row -->
             <LinearLayout
@@ -47,19 +50,21 @@
                     android:id="@+id/cardRealTimeOcr"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
+                    android:layout_margin="@dimen/margin_small"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:focusable="true"
-                    app:cardCornerRadius="16dp"
-                    app:cardElevation="4dp">
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/radius_large"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="?attr/colorSurface">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="166dp"
                         android:gravity="center"
                         android:orientation="vertical"
-                        android:padding="24dp">
+                        android:padding="@dimen/radius_large">
 
                         <ImageView
                             android:layout_width="48dp"
@@ -71,7 +76,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="12dp"
-                            android:text="Real-Time OCR"
+                            android:text="@string/label_realtime_ocr"
                             android:textAlignment="center"
                             android:textAppearance="?attr/textAppearanceSubtitle1" />
                     </LinearLayout>
@@ -82,19 +87,21 @@
                     android:id="@+id/cardBatchOcr"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
+                    android:layout_margin="@dimen/margin_small"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:focusable="true"
-                    app:cardCornerRadius="16dp"
-                    app:cardElevation="4dp">
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/radius_large"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="?attr/colorSurface">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="166dp"
                         android:gravity="center"
                         android:orientation="vertical"
-                        android:padding="24dp">
+                        android:padding="@dimen/radius_large">
 
                         <ImageView
                             android:layout_width="48dp"
@@ -106,7 +113,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="12dp"
-                            android:text="Batch OCR"
+                            android:text="@string/label_batch_ocr"
                             android:textAlignment="center"
                             android:textAppearance="?attr/textAppearanceSubtitle1" />
                     </LinearLayout>
@@ -119,3 +126,4 @@
     </androidx.core.widget.NestedScrollView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
+

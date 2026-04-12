@@ -1,4 +1,6 @@
-package com.example.ocr_assist.utils;
+package com.example.ocr_assist.translation;
+import com.example.ocr_assist.model.Language;
+
 
 import android.util.Log;
 
@@ -134,3 +136,6 @@ public class TranslationHelper {
         }
     }
 }
+
+
+

@@ -18,13 +18,13 @@
         android:id="@+id/textLiveOverlay"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginEnd="@dimen/margin_standard"
         android:layout_marginBottom="100dp"
         android:background="#80000000"
-        android:padding="16dp"
+        android:padding="@dimen/margin_standard"
         android:textColor="@android:color/white"
-        android:textSize="14sp"
+        android:textSize="@dimen/text_size_standard"
         android:maxLines="6"
         android:scrollbars="vertical"
         android:visibility="visible"
@@ -59,9 +59,10 @@
         android:id="@+id/cardResult"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_margin="16dp"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="8dp"
+        android:layout_margin="@dimen/margin_standard"
+        app:cardCornerRadius="@dimen/radius_large"
+        app:cardElevation="@dimen/margin_small"
+        app:cardBackgroundColor="?attr/colorSurface"
         android:visibility="gone"
         app:layout_constraintHeight_percent="0.7"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -72,15 +73,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="@dimen/margin_standard">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="OCR Result"
+                android:text="@string/label_ocr_result"
                 android:textAlignment="center"
                 android:textAppearance="?attr/textAppearanceHeadline6"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="@dimen/margin_small" />
 
             <ProgressBar
                 android:id="@+id/progressProcessing"
@@ -93,7 +94,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="@dimen/margin_small">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -112,7 +113,7 @@
                     android:id="@+id/textTranslatedResult"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/margin_small"
                     android:textAppearance="?attr/textAppearanceBody1"
                     android:textColor="?attr/colorPrimary"
                     android:visibility="gone"
@@ -125,72 +126,72 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/margin_standard"
             android:gravity="center"
             android:weightSum="5">
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnCopy"
-                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    style="@style/Widget.Material3.Button.TextButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     app:icon="@android:drawable/ic_menu_edit"
                     app:iconGravity="textTop"
-                    android:text="Copy"
-                    android:textSize="12sp"
+                    android:text="@string/label_copy"
+                    android:textSize="@dimen/text_size_small"
                     android:maxLines="1"
                     android:singleLine="true" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnShare"
-                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    style="@style/Widget.Material3.Button.TextButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     app:icon="@android:drawable/ic_menu_share"
                     app:iconGravity="textTop"
-                    android:text="Share"
-                    android:textSize="12sp"
+                    android:text="@string/label_share"
+                    android:textSize="@dimen/text_size_small"
                     android:maxLines="1"
                     android:singleLine="true" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnTranslate"
-                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    style="@style/Widget.Material3.Button.TextButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     app:icon="@android:drawable/ic_menu_sort_alphabetically"
                     app:iconGravity="textTop"
-                    android:text="Translate"
-                    android:textSize="12sp"
+                    android:text="@string/label_translate"
+                    android:textSize="@dimen/text_size_small"
                     android:maxLines="1"
                     android:singleLine="true" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnRetake"
-                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    style="@style/Widget.Material3.Button.TextButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     app:icon="@android:drawable/ic_menu_revert"
                     app:iconGravity="textTop"
-                    android:text="Retake"
-                    android:textSize="12sp"
+                    android:text="@string/label_retake"
+                    android:textSize="@dimen/text_size_small"
                     android:maxLines="1"
                     android:singleLine="true" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnListen"
-                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    style="@style/Widget.Material3.Button.TextButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     app:icon="@android:drawable/ic_lock_silent_mode_off"
                     app:iconGravity="textTop"
-                    android:text="Listen"
-                    android:textSize="12sp"
+                    android:text="@string/label_listen"
+                    android:textSize="@dimen/text_size_small"
                     android:maxLines="1"
                     android:singleLine="true" />
             </LinearLayout>
@@ -198,3 +199,4 @@
     </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

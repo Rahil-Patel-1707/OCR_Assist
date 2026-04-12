@@ -46,3 +46,5 @@ public abstract class BaseActivity<VB extends ViewBinding> extends AppCompatActi
     
     protected void setupListeners() {}
 }
+
+

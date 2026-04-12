@@ -1,4 +1,8 @@
 package com.example.ocr_assist.ui;
+import com.example.ocr_assist.model.BatchOcrResult;
+import com.example.ocr_assist.model.Language;
+import com.example.ocr_assist.adapter.BatchOcrAdapter;
+
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,9 +17,9 @@ import androidx.annotation.NonNull;
 
 import com.example.ocr_assist.databinding.ActivityBatchOcrBinding;
 import com.example.ocr_assist.ui.base.BaseActivity;
-import com.example.ocr_assist.utils.TranslationHelper;
-import com.example.ocr_assist.utils.MultiScriptOcrHelper;
-import com.example.ocr_assist.utils.TtsHelper;
+import com.example.ocr_assist.translation.TranslationHelper;
+import com.example.ocr_assist.ocr.MultiScriptOcrHelper;
+import com.example.ocr_assist.tts.TtsHelper;
 import com.google.mlkit.nl.languageid.LanguageIdentification;
 import com.google.mlkit.nl.languageid.LanguageIdentifier;
 import com.google.mlkit.vision.common.InputImage;
@@ -280,3 +284,6 @@ public class BatchOcrActivity extends BaseActivity<ActivityBatchOcrBinding> {
         });
     }
 }
+
+
+

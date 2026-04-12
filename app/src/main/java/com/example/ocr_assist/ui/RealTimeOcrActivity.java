@@ -1,4 +1,6 @@
 package com.example.ocr_assist.ui;
+import com.example.ocr_assist.model.Language;
+
 
 import android.Manifest;
 import android.content.ClipData;
@@ -30,9 +32,9 @@ import androidx.core.content.ContextCompat;
 
 import com.example.ocr_assist.databinding.ActivityRealTimeOcrBinding;
 import com.example.ocr_assist.ui.base.BaseActivity;
-import com.example.ocr_assist.utils.TranslationHelper;
-import com.example.ocr_assist.utils.MultiScriptOcrHelper;
-import com.example.ocr_assist.utils.TtsHelper;
+import com.example.ocr_assist.translation.TranslationHelper;
+import com.example.ocr_assist.ocr.MultiScriptOcrHelper;
+import com.example.ocr_assist.tts.TtsHelper;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.mlkit.nl.languageid.LanguageIdentification;
 import com.google.mlkit.nl.languageid.LanguageIdentifier;
@@ -437,3 +439,6 @@ public class RealTimeOcrActivity extends BaseActivity<ActivityRealTimeOcrBinding
 
     }
 }
+
+
+

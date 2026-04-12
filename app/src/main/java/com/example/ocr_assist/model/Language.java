@@ -1,4 +1,4 @@
-package com.example.ocr_assist.ui;
+package com.example.ocr_assist.model;
 
 public class Language {
     private final String code;
@@ -17,3 +17,5 @@ public class Language {
         return name;
     }
 }
+
+

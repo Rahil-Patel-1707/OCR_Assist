@@ -1,4 +1,6 @@
-package com.example.ocr_assist.ui;
+package com.example.ocr_assist.adapter;
+import com.example.ocr_assist.model.Language;
+
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -90,3 +92,6 @@ public class LanguageAdapter extends RecyclerView.Adapter<LanguageAdapter.Langua
         }
     }
 }
+
+
+

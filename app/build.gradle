@@ -52,7 +52,6 @@ dependencies {
     implementation libs.mlkit.text.recognition.devanagari
     implementation libs.mlkit.text.recognition.japanese
     implementation libs.mlkit.text.recognition.korean
-    implementation libs.mlkit.digital.ink.recognition
     implementation libs.mlkit.translate
     implementation libs.mlkit.language.id
     

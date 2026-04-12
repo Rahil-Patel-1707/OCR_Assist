@@ -2,4 +2,59 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    
+    <!-- M3 Vibrant Colors -->
+    <!-- Primary: Indigo/Blue -->
+    <color name="md_theme_light_primary">#4F46E5</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_primaryContainer">#E0E7FF</color>
+    <color name="md_theme_light_onPrimaryContainer">#312E81</color>
+    <color name="md_theme_light_inversePrimary">#818CF8</color>
+
+    <!-- Secondary: Pink -->
+    <color name="md_theme_light_secondary">#4F46E5</color>
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_secondaryContainer">#4F46E5</color>
+    <color name="md_theme_light_onSecondaryContainer">#0F172A</color>
+
+    <!-- Tertiary: Teal/Cyan -->
+    <color name="md_theme_light_tertiary">#06B6D4</color>
+    <color name="md_theme_light_onTertiary">#FFFFFF</color>
+    <color name="md_theme_light_tertiaryContainer">#CFFAFE</color>
+    <color name="md_theme_light_onTertiaryContainer">#164E63</color>
+
+    <!-- Core surface and backgrounds -->
+    <color name="md_theme_light_background">#F8FAFC</color>
+    <color name="md_theme_light_onBackground">#0F172A</color>
+    <color name="md_theme_light_surface">#FFFFFF</color>
+    <color name="md_theme_light_onSurface">#0F172A</color>
+    <color name="md_theme_light_surfaceVariant">#F1F5F9</color>
+    <color name="md_theme_light_onSurfaceVariant">#334155</color>
+    
+    <!-- M3 Dark Vibrant Colors -->
+    <!-- Primary: Indigo/Blue -->
+    <color name="md_theme_dark_primary">#818CF8</color>
+    <color name="md_theme_dark_onPrimary">#312E81</color>
+    <color name="md_theme_dark_primaryContainer">#3730A3</color>
+    <color name="md_theme_dark_onPrimaryContainer">#E0E7FF</color>
+    
+    <!-- Secondary: Pink -->
+    <color name="md_theme_dark_secondary">#F472B6</color>
+    <color name="md_theme_dark_onSecondary">#831843</color>
+    <color name="md_theme_dark_secondaryContainer">#9D174D</color>
+    <color name="md_theme_dark_onSecondaryContainer">#FCE7F3</color>
+    
+    <!-- Tertiary: Teal/Cyan -->
+    <color name="md_theme_dark_tertiary">#22D3EE</color>
+    <color name="md_theme_dark_onTertiary">#164E63</color>
+    <color name="md_theme_dark_tertiaryContainer">#0891B2</color>
+    <color name="md_theme_dark_onTertiaryContainer">#CFFAFE</color>
+
+    <!-- Core surface and backgrounds -->
+    <color name="md_theme_dark_background">#0F172A</color>
+    <color name="md_theme_dark_onBackground">#F8FAFC</color>
+    <color name="md_theme_dark_surface">#1E293B</color>
+    <color name="md_theme_dark_onSurface">#F8FAFC</color>
+    <color name="md_theme_dark_surfaceVariant">#334155</color>
+    <color name="md_theme_dark_onSurfaceVariant">#CBD5E1</color>
 </resources>

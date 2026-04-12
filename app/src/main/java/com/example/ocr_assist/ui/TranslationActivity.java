@@ -1,4 +1,6 @@
 package com.example.ocr_assist.ui;
+import com.example.ocr_assist.model.Language;
+
 
 import android.os.Bundle;
 import android.util.Log;
@@ -158,3 +160,6 @@ public class TranslationActivity extends BaseActivity<ActivityTranslationBinding
         }
     }
 }
+
+
+

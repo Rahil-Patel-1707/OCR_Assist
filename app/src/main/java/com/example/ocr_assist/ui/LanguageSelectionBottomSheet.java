@@ -1,4 +1,7 @@
 package com.example.ocr_assist.ui;
+import com.example.ocr_assist.model.Language;
+import com.example.ocr_assist.adapter.LanguageAdapter;
+
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -98,3 +101,6 @@ public class LanguageSelectionBottomSheet extends BottomSheetDialogFragment {
         binding = null;
     }
 }
+
+
+

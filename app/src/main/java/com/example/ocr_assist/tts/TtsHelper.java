@@ -1,4 +1,7 @@
-package com.example.ocr_assist.utils;
+package com.example.ocr_assist.tts;
+import com.example.ocr_assist.tts.TtsSegment;
+import com.example.ocr_assist.model.Language;
+
 
 import android.content.Context;
 import android.os.Bundle;
@@ -285,3 +288,6 @@ public class TtsHelper {
         }
     }
 }
+
+
+

@@ -5,35 +5,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginHorizontal="16dp"
-    android:layout_marginVertical="8dp"
-    app:cardCornerRadius="12dp"
+    android:layout_marginHorizontal="@dimen/margin_standard"
+    android:layout_marginVertical="@dimen/margin_small"
+    app:cardCornerRadius="@dimen/margin_standard"
+    app:cardBackgroundColor="?attr/colorSurface"
     app:cardElevation="2dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="@dimen/margin_standard">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/imageThumbnail"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="@dimen/thumbnail_size"
+                android:layout_height="@dimen/thumbnail_size"
                 android:scaleType="centerCrop"
-                android:background="#E0E0E0"
+                android:background="?attr/colorSurfaceVariant"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize8Percent"
                 tools:srcCompat="@tools:sample/backgrounds/scenic"/>
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="@dimen/margin_standard"
                 android:orientation="vertical">
 
                 <TextView
@@ -41,7 +43,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="?attr/colorOnSurface"
-                    android:textSize="14sp"
+                    android:textSize="@dimen/text_size_standard"
                     android:textIsSelectable="true"
                     tools:text="Detected text goes here. It might be long so it should wrap nicely." />
                     
@@ -49,18 +51,18 @@
                     android:id="@+id/textTranslated"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/margin_small"
                     android:textColor="?attr/colorPrimary"
-                    android:textSize="14sp"
+                    android:textSize="@dimen/text_size_standard"
                     android:visibility="gone"
                     android:textIsSelectable="true"
                     tools:text="Translated text will appear here." />
                     
                 <ProgressBar
                     android:id="@+id/progressTranslation"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_width="@dimen/radius_large"
+                    android:layout_height="@dimen/radius_large"
+                    android:layout_marginTop="@dimen/margin_small"
                     android:visibility="gone" />
 
             </LinearLayout>
@@ -70,27 +72,27 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginTop="16dp"
-            android:background="#E0E0E0" />
+            android:layout_marginTop="@dimen/margin_standard"
+            android:background="?attr/colorOutlineVariant" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/margin_small"
             android:gravity="center"
             android:weightSum="4">
             
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCopy"
-                style="@style/Widget.MaterialComponents.Button.TextButton"
+                style="@style/Widget.Material3.Button.TextButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Copy"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"
-                android:textSize="12sp"
+                android:text="@string/label_copy"
+                android:paddingTop="@dimen/margin_small"
+                android:paddingBottom="@dimen/margin_small"
+                android:textSize="@dimen/text_size_small"
                 android:singleLine="true"
                 android:maxLines="1"
                 app:icon="@android:drawable/ic_menu_edit"
@@ -98,14 +100,14 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnShare"
-                style="@style/Widget.MaterialComponents.Button.TextButton"
+                style="@style/Widget.Material3.Button.TextButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Share"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"
-                android:textSize="12sp"
+                android:text="@string/label_share"
+                android:paddingTop="@dimen/margin_small"
+                android:paddingBottom="@dimen/margin_small"
+                android:textSize="@dimen/text_size_small"
                 android:singleLine="true"
                 android:maxLines="1"
                 app:icon="@android:drawable/ic_menu_share"
@@ -113,14 +115,14 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnTranslate"
-                style="@style/Widget.MaterialComponents.Button.TextButton"
+                style="@style/Widget.Material3.Button.TextButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Translate"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"
-                android:textSize="12sp"
+                android:text="@string/label_translate"
+                android:paddingTop="@dimen/margin_small"
+                android:paddingBottom="@dimen/margin_small"
+                android:textSize="@dimen/text_size_small"
                 android:singleLine="true"
                 android:maxLines="1"
                 app:icon="@android:drawable/ic_menu_sort_alphabetically"
@@ -128,14 +130,14 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnListen"
-                style="@style/Widget.MaterialComponents.Button.TextButton"
+                style="@style/Widget.Material3.Button.TextButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Listen"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"
-                android:textSize="12sp"
+                android:text="@string/label_listen"
+                android:paddingTop="@dimen/margin_small"
+                android:paddingBottom="@dimen/margin_small"
+                android:textSize="@dimen/text_size_small"
                 android:singleLine="true"
                 android:maxLines="1"
                 app:icon="@android:drawable/ic_lock_silent_mode_off"
@@ -145,3 +147,4 @@
     </LinearLayout>
 
 </com.google.android.material.card.MaterialCardView>
+

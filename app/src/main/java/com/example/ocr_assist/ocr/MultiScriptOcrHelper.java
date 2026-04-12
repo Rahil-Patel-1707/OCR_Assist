@@ -1,4 +1,6 @@
-package com.example.ocr_assist.utils;
+package com.example.ocr_assist.ocr;
+import com.example.ocr_assist.ocr.OcrProcessor;
+
 
 import android.content.Context;
 
@@ -107,3 +109,6 @@ public class MultiScriptOcrHelper {
         if (latinRecognizer == null) init();
     }
 }
+
+
+

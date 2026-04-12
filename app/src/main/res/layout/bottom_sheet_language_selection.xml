@@ -6,38 +6,38 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="?attr/colorSurface"
-    android:paddingTop="8dp">
+    android:paddingTop="@dimen/margin_small">
 
     <!-- Drag handle -->
     <View
         android:layout_width="40dp"
         android:layout_height="4dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="8dp"
-        android:background="#E0E0E0" />
+        android:layout_marginBottom="@dimen/margin_small"
+        android:background="?attr/colorOutlineVariant" />
 
     <TextView
         android:id="@+id/textTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select Target Language"
-        android:textSize="20sp"
+        android:text="@string/label_select_target_language"
+        android:textSize="@dimen/text_size_title"
         android:textStyle="bold"
         android:textColor="?attr/colorOnSurface"
-        android:paddingHorizontal="16dp"
-        android:paddingVertical="8dp" />
+        android:paddingHorizontal="@dimen/margin_standard"
+        android:paddingVertical="@dimen/margin_small" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="@dimen/margin_standard"
+        android:layout_marginVertical="@dimen/margin_small"
         app:startIconDrawable="@android:drawable/ic_menu_search"
         app:boxBackgroundMode="outline"
-        app:boxCornerRadiusTopStart="12dp"
-        app:boxCornerRadiusTopEnd="12dp"
-        app:boxCornerRadiusBottomStart="12dp"
-        app:boxCornerRadiusBottomEnd="12dp">
+        app:boxCornerRadiusTopStart="@dimen/radius_large"
+        app:boxCornerRadiusTopEnd="@dimen/radius_large"
+        app:boxCornerRadiusBottomStart="@dimen/radius_large"
+        app:boxCornerRadiusBottomEnd="@dimen/radius_large">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editSearch"
@@ -53,7 +53,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/margin_small"
         android:clipToPadding="false"
-        android:paddingBottom="16dp" />
+        android:paddingBottom="@dimen/margin_standard" />
 </LinearLayout>
+

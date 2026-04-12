@@ -1,4 +1,4 @@
-package com.example.ocr_assist.ui;
+package com.example.ocr_assist.model;
 
 import android.net.Uri;
 
@@ -38,3 +38,5 @@ public class BatchOcrResult {
         this.isSpeaking = speaking;
     }
 }
+
+

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="16dp"
+    android:padding="@dimen/margin_standard"
     android:gravity="center_vertical"
     android:background="?attr/selectableItemBackground"
     android:clickable="true"
@@ -13,8 +13,8 @@
 
     <ImageView
         android:id="@+id/iconLanguage"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="@dimen/radius_large"
+        android:layout_height="@dimen/radius_large"
         android:src="@android:drawable/ic_menu_sort_alphabetically"
         android:contentDescription="Language Icon"
         app:tint="?attr/colorPrimary" />
@@ -24,9 +24,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="@dimen/margin_standard"
         android:textColor="?attr/colorOnSurface"
-        android:textSize="16sp"
+        android:textSize="@dimen/text_size_large"
         android:singleLine="true"
         android:maxLines="1" />
 </LinearLayout>
+

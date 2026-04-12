@@ -1,4 +1,6 @@
-package com.example.ocr_assist.utils;
+package com.example.ocr_assist.ocr;
+import com.example.ocr_assist.model.Language;
+
 
 import android.graphics.Rect;
 
@@ -243,3 +245,6 @@ public class OcrProcessor {
         return labels;
     }
 }
+
+
+

@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">OCR_Assist</string>
+    <string name="label_select_images">Select Images</string>
+    <string name="label_realtime_ocr">Real-Time OCR</string>
+    <string name="label_batch_ocr">Batch OCR</string>
+    <string name="label_ocr_result">OCR Result</string>
+    <string name="label_copy">Copy</string>
+    <string name="label_share">Share</string>
+    <string name="label_translate">Translate</string>
+    <string name="label_retake">Retake</string>
+    <string name="label_listen">Listen</string>
+    <string name="label_detected_language_typing">Detected Language: (Typing...)</string>
+    <string name="label_translate_to">Translate to: </string>
+    <string name="label_translate_text">Translate Text</string>
+    <string name="label_downloading_language_model">Downloading language model...</string>
+    <string name="label_translation_result">Translation Result</string>
+    <string name="label_select_target_language">Select Target Language</string>
 </resources>

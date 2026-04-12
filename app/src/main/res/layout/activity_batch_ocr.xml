@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:background="@drawable/bg_gradient_main"
     tools:context=".ui.BatchOcrActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -16,9 +17,12 @@
             android:id="@+id/topAppBar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/bg_gradient_toolbar"
+            android:elevation="4dp"
             app:title="Batch OCR"
             app:titleCentered="true"
-            app:titleTextColor="?attr/colorOnSurface"
+            app:titleTextColor="@color/white"
+            app:navigationIconTint="@color/white"
             app:navigationIcon="?attr/homeAsUpIndicator" />
             
     </com.google.android.material.appbar.AppBarLayout>
@@ -32,8 +36,8 @@
             android:id="@+id/btnSelectImages"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Select Images"
+            android:layout_marginTop="@dimen/margin_standard"
+            android:text="@string/label_select_images"
             app:icon="@drawable/ic_batch_ocr"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -43,7 +47,7 @@
             android:id="@+id/progressBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/margin_standard"
             android:visibility="gone"
             app:layout_constraintTop_toBottomOf="@id/btnSelectImages"
             app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +57,7 @@
             android:id="@+id/textProgress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/margin_small"
             android:visibility="gone"
             tools:text="Processing 1 of 5"
             app:layout_constraintTop_toBottomOf="@id/progressBar"
@@ -64,9 +68,9 @@
             android:id="@+id/recyclerView"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/margin_standard"
             android:clipToPadding="false"
-            android:paddingBottom="16dp"
+            android:paddingBottom="@dimen/margin_standard"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintTop_toBottomOf="@id/textProgress"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -77,3 +81,4 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
+

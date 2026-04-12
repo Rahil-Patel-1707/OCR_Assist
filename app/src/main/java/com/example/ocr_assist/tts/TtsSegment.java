@@ -1,4 +1,6 @@
-package com.example.ocr_assist.utils;
+package com.example.ocr_assist.tts;
+import com.example.ocr_assist.model.Language;
+
 
 /**
  * TtsSegment represents a chunk of text to be spoken by the Android TTS engine.
@@ -21,3 +23,6 @@ public class TtsSegment {
         this.isLanguageSwitch = isLanguageSwitch;
     }
 }
+
+
+

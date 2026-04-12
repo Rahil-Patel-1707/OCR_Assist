@@ -1,4 +1,6 @@
-package com.example.ocr_assist.ui;
+package com.example.ocr_assist.adapter;
+import com.example.ocr_assist.model.BatchOcrResult;
+
 
 import android.content.res.ColorStateList;
 import android.graphics.Color;
@@ -246,3 +248,6 @@ public class BatchOcrAdapter extends RecyclerView.Adapter<BatchOcrAdapter.Result
         }
     }
 }
+
+
+
