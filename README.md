@@ -80,13 +80,7 @@ git clone https://github.com/your-username/ocr-assist.git
 2. Open in Android Studio
 
 3. Sync Gradle & Run the project
-
----
-
-## 📸 Screenshots
-
-*(Add your app screenshots here)*
-
+4. 
 ---
 
 ## 🎯 Future Enhancements
